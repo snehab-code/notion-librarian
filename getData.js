@@ -5,6 +5,7 @@ const grSearch = require('./goodreads')
 const getData = async(params) => {
     const {method, url, data} = {params}
     try {
+        // not a function error. #todo
         const response = await axios[method](url, {
             headers: {
                 'Authorization': `Bearer ${notionKey}`
